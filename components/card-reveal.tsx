@@ -7,7 +7,7 @@ import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
 export function CanvasRevealEffectDemo() {
   return (
     <>
-      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-main w-full gap-4 mx-auto px-8">
+      <div className="py-20 flex flex-col lg:flex-row items-center justify-center bg-white dark:bg-main w-full gap-10 mx-auto px-8 ">
         <Card title="You get something something" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}

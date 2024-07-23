@@ -21,7 +21,7 @@ export default function Home() {
             experiences. Every purchase supports both our store and the passionate developers behind
             these unique creations.
           </p> */}
-          <h3 className="text-third-100">
+          <h3>
             What are <b>your</b> benefits?
           </h3>
           <CanvasRevealEffectDemo />

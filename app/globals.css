@@ -73,3 +73,15 @@ hr {
     font-size: 1rem;
   }
 }
+@media (max-width: 1300px) {
+  .evervault-cards {
+    flex-direction: column;
+    align-items: start;
+  }
+  h3 {
+    margin-top: 2.5rem;
+  }
+  .evervault-text p {
+    margin-bottom: 0.5rem;
+  }
+}

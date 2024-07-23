@@ -3,6 +3,7 @@ import React from 'react';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
+import { Icon } from '../public/icons/corner';
 
 import Image from 'next/image';
 
@@ -89,21 +90,5 @@ const Card = ({
         </h5>
       </div>
     </div>
-  );
-};
-
-export const Icon = ({ className, ...rest }: any) => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      stroke="currentColor"
-      className={className}
-      {...rest}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" />
-    </svg>
   );
 };

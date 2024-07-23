@@ -8,6 +8,7 @@ import { SignupFormDemo } from '@/components/contact';
 
 import { StickyScrollRevealDemo } from '@/components/scroll';
 import { EvervaultCardDemo } from '@/components/evervault';
+import { InputField } from '@/components/input-field';
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           <h2 className="mb-0">Who we are looking for?</h2>
           {/* <StickyScrollRevealDemo /> */}
           <div className="evervault-cards">
-            <div>
+            <div className="evervault-text">
               <h3>Somebody somebody</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
@@ -43,7 +44,7 @@ export default function Home() {
             <EvervaultCardDemo />
           </div>
           <div className="evervault-cards reverse">
-            <div>
+            <div className="evervault-text">
               <h3>Somebody somebody</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
@@ -63,6 +64,10 @@ export default function Home() {
 
           <CanvasRevealEffectDemo />
           <SignupFormDemo />
+
+          {/* <div className="form">
+            <InputField />
+          </div> */}
         </main>
       </div>
     </>

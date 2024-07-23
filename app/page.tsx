@@ -4,6 +4,7 @@ import { CanvasRevealEffectDemo } from '../components/card-reveal';
 import Navbar from '@/components/nav-bar';
 import { BackgroundBoxesDemo } from '@/components/background-boxes';
 import { HeroHighlightDemo } from '@/components/dots';
+import { SignupFormDemo } from '@/components/signup-form';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
             What are <b>your</b> benefits?
           </h3>
           <CanvasRevealEffectDemo />
+          <SignupFormDemo />
         </main>
       </div>
     </>

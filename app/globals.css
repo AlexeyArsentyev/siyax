@@ -25,6 +25,7 @@ h1 {
 
   font-family: 'Chillax';
   pointer-events: none;
+  line-height: 1rem;
 }
 
 h2 {

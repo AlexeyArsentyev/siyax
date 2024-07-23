@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Variable.ttf');
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit-Variable.ttf');
+}
+:root {
+  --bg-color: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Outfit';
+  color: white;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.logo {
+  font-family: 'Chillax';
+  font-size: 2rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.dots-container {
+  width: 1000px;
+  height: 600px;
+}

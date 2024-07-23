@@ -46,3 +46,9 @@ p {
 .main-wrapper {
   margin: 0 5%;
 }
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}

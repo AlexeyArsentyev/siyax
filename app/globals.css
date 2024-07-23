@@ -30,33 +30,46 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  font-weight: 200;
+  margin: 2rem 0;
 }
 
 h3 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 3rem;
-  font-weight: 300;
+  font-size: 2rem;
 }
 
 p {
   max-width: 60rem;
   font-size: 1.5rem;
   color: rgb(163, 163, 163);
+  font-weight: 300;
 }
 
 .main-wrapper {
   margin: 0 5%;
 }
 
+.evervault-cards {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
 hr {
-  border-width: 1px;
+  border-top-width: 1px;
   border-color: rgb(73, 73, 73);
-  margin: 4rem 0 3rem 0;
+  margin: 3rem 0;
 }
 
 @media (max-width: 800px) {
-  h3 {
-    font-size: 1.5rem;
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
   }
 }

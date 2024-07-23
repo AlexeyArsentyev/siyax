@@ -7,6 +7,7 @@ import { HeroHighlightDemo } from '@/components/dots';
 import { SignupFormDemo } from '@/components/contact';
 
 import { StickyScrollRevealDemo } from '@/components/scroll';
+import { EvervaultCardDemo } from '@/components/evervault';
 
 export default function Home() {
   return (
@@ -25,10 +26,38 @@ export default function Home() {
             these unique creations.
           </p>
           <hr />
-          <h2>Who we are looking for?</h2>
-          <StickyScrollRevealDemo />
+          <h2 className="mb-0">Who we are looking for?</h2>
+          {/* <StickyScrollRevealDemo /> */}
+          <div className="evervault-cards">
+            <div>
+              <h3>Somebody somebody</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
+                accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
+                aperiam! Deleniti quo sunt eum asperiores? Enim veniam porro mollitia inventore at
+                maxime repellendus non facilis distinctio debitis suscipit nobis impedit, quisquam
+                asperiores molestias velit, magni, quasi consectetur provident obcaecati ex nisi
+                laborum! Et aspernatur sequi vitae incidunt accusamus unde.
+              </p>
+            </div>
+            <EvervaultCardDemo />
+          </div>
+          <div className="evervault-cards reverse">
+            <div>
+              <h3>Somebody somebody</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
+                accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
+                aperiam! Deleniti quo sunt eum asperiores? Enim veniam porro mollitia inventore at
+                maxime repellendus non facilis distinctio debitis suscipit nobis impedit, quisquam
+                asperiores molestias velit, magni, quasi consectetur provident obcaecati ex nisi
+                laborum! Et aspernatur sequi vitae incidunt accusamus unde.
+              </p>
+            </div>
+            <EvervaultCardDemo />
+          </div>
 
-          <h2 className="text-center my-4">
+          <h2 className="mt-20">
             What are <b>your</b> benefits?
           </h2>
 

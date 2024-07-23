@@ -10,8 +10,8 @@ export function SignupFormDemo() {
     console.log('Form submitted');
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-main">
-      <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">Contact us</h2>
+    <div className="max-w-md w-full rounded-none md:rounded-2xl shadow-input bg-main">
+      <h2>Contact us</h2>
 
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
@@ -37,7 +37,7 @@ export function SignupFormDemo() {
           className=" relative group/btn bg-main  w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
           type="submit"
         >
-          Sign up &rarr;
+          Contact &rarr;
           <BottomGradient />
         </button>
 

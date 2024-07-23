@@ -4,7 +4,9 @@ import { CanvasRevealEffectDemo } from '../components/card-reveal';
 import Navbar from '@/components/nav-bar';
 import { BackgroundBoxesDemo } from '@/components/background-boxes';
 import { HeroHighlightDemo } from '@/components/dots';
-import { SignupFormDemo } from '@/components/signup-form';
+import { SignupFormDemo } from '@/components/contact';
+
+import { StickyScrollRevealDemo } from '@/components/scroll';
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
       <HeroHighlightDemo />
       <div className="main-wrapper">
         <main>
-          {/* <h2 className="text-first-100">Who we are?</h2>
+          <h2>Who we are?</h2>
           <p>
             Siya: Your gateway to gaming&apos;s hidden gems. We scour the indie scene to bring you a
             meticulously curated collection of standout titles. Our compact but diverse lineup
@@ -21,10 +23,15 @@ export default function Home() {
             razor-thin margins, our mission is to connect discerning gamers with exceptional indie
             experiences. Every purchase supports both our store and the passionate developers behind
             these unique creations.
-          </p> */}
-          <h3>
+          </p>
+          <hr />
+          <h2>Who we are looking for?</h2>
+          <StickyScrollRevealDemo />
+
+          <h2 className="text-center my-4">
             What are <b>your</b> benefits?
-          </h3>
+          </h2>
+
           <CanvasRevealEffectDemo />
           <SignupFormDemo />
         </main>

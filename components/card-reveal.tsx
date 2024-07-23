@@ -20,7 +20,12 @@ export function CanvasRevealEffectDemo() {
         </Card>
         <Card
           title="Sheetal is Nisha"
-          icon={<p>Some text idk it needs to be long ig lets add more wooords ok thats enough</p>}
+          icon={
+            <p>
+              Some text idk it needs to be long ig lets add more wooords ok thats enoughSome text
+              idk it needs to be long ig lets add more wooords ok thats enough
+            </p>
+          }
         >
           <CanvasRevealEffect
             animationSpeed={5.1}

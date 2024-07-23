@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.logo {
+  font-family: 'Chillax';
+  font-size: 2rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}

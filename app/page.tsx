@@ -9,6 +9,8 @@ import { SignupFormDemo } from '@/components/contact';
 import { StickyScrollRevealDemo } from '@/components/scroll';
 import { EvervaultCardDemo } from '@/components/evervault';
 import { InputField } from '@/components/input-field';
+import { GenericCard } from '@/components/generic-card';
+import { Form } from '@/components/form';
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       <HeroHighlightDemo />
       <div className="main-wrapper">
         <main>
-          <h2>Who we are?</h2>
+          <h2 id="aboutUs">Who we are?</h2>
           <p>
             Siya: Your gateway to gaming&apos;s hidden gems. We scour the indie scene to bring you a
             meticulously curated collection of standout titles. Our compact but diverse lineup
@@ -41,7 +43,7 @@ export default function Home() {
                 laborum! Et aspernatur sequi vitae incidunt accusamus unde.
               </p>
             </div>
-            <EvervaultCardDemo />
+            <GenericCard />
           </div>
           <div className="evervault-cards reverse">
             <div className="evervault-text">
@@ -58,12 +60,14 @@ export default function Home() {
             <EvervaultCardDemo />
           </div>
 
-          <h2 className="mt-20">
+          <h2 id="advantages" className="mt-20">
             What are <b>your</b> benefits?
           </h2>
 
           <CanvasRevealEffectDemo />
-          <SignupFormDemo />
+          <h2 id="contact">Contact us</h2>
+          <Form />
+          {/* <SignupFormDemo /> */}
 
           {/* <div className="form">
             <InputField />

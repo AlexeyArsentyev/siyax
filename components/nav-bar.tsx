@@ -8,9 +8,9 @@ export default function Navbar() {
       </a>
 
       <div className="nav-right">
-        <a href="#">About us</a>
-        <a href="#">Advantages</a>
-        <a href="#">Contact</a>
+        <a href="#aboutUs">About us</a>
+        <a href="#advantages">Advantages</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );

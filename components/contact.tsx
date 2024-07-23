@@ -11,8 +11,6 @@ export function SignupFormDemo() {
   };
   return (
     <div className="max-w-md w-full rounded-none md:rounded-2xl shadow-input bg-main">
-      <h2>Contact us</h2>
-
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>

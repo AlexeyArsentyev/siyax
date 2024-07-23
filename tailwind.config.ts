@@ -18,12 +18,19 @@ const config: Config = {
       },
       colors: {
         'main': '#1e1e1e',
-        'first-dark': '#35635E',
-        'second-dark': '#5E3062',
-        'third-dark': '#2B6983',
-        'first': '#EBA3F1',
-        'second': '#8F59B0',
-        'third': '#EBA3F1',
+        'first': {
+          100: '#A2F1C7',
+          200: '#35635E',
+        },
+        'second': {
+          100: '#8F59B0',
+          200: '#5E3062',
+        },
+
+        'third': {
+          100: '#98E0FF',
+          200: '#2B6983',
+        },
       },
     },
   },

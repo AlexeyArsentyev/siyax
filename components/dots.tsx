@@ -20,7 +20,7 @@ export function HeroHighlightDemo() {
         }}
         className="text-2xl px-4 md:text-4xl lg:text-5xl  text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        Siya - your only indie &#20;
+        Siya - your only indie&nbsp;
         <Highlight className="text-white">game&nbsp;store</Highlight>
       </motion.h1>
     </HeroHighlight>

@@ -26,5 +26,10 @@ nav {
 @media (max-width: 800px) {
   .nav-right {
     font-size: 0.9rem;
+    margin-right: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
   }
 }

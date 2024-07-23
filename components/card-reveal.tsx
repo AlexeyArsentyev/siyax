@@ -11,7 +11,7 @@ export function CanvasRevealEffectDemo() {
         <Card title="You get something something" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-green-bg"
+            containerClassName="bg-first-dark"
             colors={[[115, 217, 162]]}
             dotSize={2.5}
           />
@@ -19,7 +19,7 @@ export function CanvasRevealEffectDemo() {
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-purple-bg"
+            containerClassName="bg-second-dark"
             colors={[[235, 163, 241]]}
             dotSize={2.5}
           />
@@ -27,11 +27,8 @@ export function CanvasRevealEffectDemo() {
         <Card title="Sheetal is Nisha" icon={<AceternityIcon />}>
           <CanvasRevealEffect
             animationSpeed={5.1}
-            containerClassName="bg-yellow-bg"
-            colors={[
-              [242, 196, 141],
-              [242, 164, 159],
-            ]}
+            containerClassName="bg-third-dark"
+            colors={[[122, 196, 227]]}
             dotSize={2.5}
           />
         </Card>

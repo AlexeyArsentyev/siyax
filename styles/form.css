@@ -15,8 +15,7 @@ input {
 textarea {
   border-bottom: 1px #4b4b4b solid;
 
-  border-right: 1px linear-gradient(red, blue) solid;
-  min-height: 6rem;
+  min-height: 2rem;
 }
 
 textarea:focus,

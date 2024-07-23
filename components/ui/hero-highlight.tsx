@@ -32,7 +32,7 @@ export const HeroHighlight = ({
     >
       <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-neutral-400 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="pointer-events-none bg-dot-thick-neutral-500 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -50,6 +50,8 @@ export const HeroHighlight = ({
           `,
         }}
       />
+
+      <div className="w-full absolute bg-gradient-to-t from-main to-transparent h-32 bottom-0 "></div>
 
       <div className={cn('relative z-20', className)}>{children}</div>
     </div>

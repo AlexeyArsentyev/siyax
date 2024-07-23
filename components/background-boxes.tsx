@@ -9,7 +9,7 @@ export function BackgroundBoxesDemo() {
       <div className="absolute inset-0 w-full h-full bg-main-bg z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
 
       <Boxes />
-      <h1>Siya - your only indie game store you will ever need</h1>
+      <h1>Siya - your only indie game store</h1>
       {/* <p className="text-center mt-2 text-neutral-300 relative z-20  pointer-events-none">
         Framer motion is the best animation library ngl
       </p> */}

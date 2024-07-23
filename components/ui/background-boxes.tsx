@@ -23,7 +23,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
       {...rest}
     >
       {rows.map((_, i) => (
-        <motion.div key={`row` + i} className="w-16 h-8  border-l  border-slate-700 relative">
+        <motion.div key={`row` + i} className="w-16 h-8  border-l  border-white relative">
           {cols.map((_, j) => (
             <motion.div
               whileHover={{
@@ -34,7 +34,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                 transition: { duration: 10 },
               }}
               key={`col` + j}
-              className="w-16 h-8  border-r border-t border-slate-700 relative"
+              className="w-16 h-8  border-r border-t border-purple-bg relative"
             >
               {j % 2 === 0 && i % 2 === 0 ? (
                 <svg

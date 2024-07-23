@@ -8,10 +8,15 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <BackgroundBoxesDemo />
-        <CanvasRevealEffectDemo />
-      </main>
+      {/* <div className="hero">
+        <h1>Siya - your only indie game store</h1>
+      </div> */}
+      <div className="main-wrapper">
+        <main>
+          <BackgroundBoxesDemo />
+          <CanvasRevealEffectDemo />
+        </main>
+      </div>
     </>
   );
 }

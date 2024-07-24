@@ -3,7 +3,7 @@ textarea {
   background-color: var(--bg-color);
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
-  max-width: 30rem;
+
   width: 100%;
   transition: border 0.3s ease-in-out;
   display: block;
@@ -31,6 +31,8 @@ textarea::placeholder {
 
 form {
   margin-bottom: 10rem;
+  max-width: 30rem;
+  font-weight: 300;
 }
 label {
   color: white;
@@ -41,7 +43,10 @@ label {
   margin-bottom: 0.2rem;
 }
 
-.error {
+.label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 /* button {

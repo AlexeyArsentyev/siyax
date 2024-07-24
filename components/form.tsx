@@ -21,43 +21,47 @@ export function Form() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <p>
-        <label htmlFor="name">Name:&nbsp;</label>{' '}
+      <div className="label-container">
+        <label htmlFor="name">Name:</label>{' '}
         {nameError && <span className="ml-4 text-lg text-red-300">Please provide your name</span>}
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Somebody "
-          className="active:border-b focus:border-first-100"
-        />
-      </p>
-      <p>
-        <label htmlFor="email">Email:&nbsp;</label>
+      </div>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Somebody "
+        className="active:border-b focus:border-first-100"
+      />
+
+      <div className="label-container">
+        <label htmlFor="email">Email:</label>
         {emailError && <span className="ml-4 text-lg text-red-300">Please provide your email</span>}
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="somebody@gmail.com"
-          className="active:border-b focus:border-third-100"
-        />
-      </p>
-      <p>
+      </div>
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="somebody@gmail.com"
+        className="active:border-b focus:border-third-100"
+      />
+
+      <div className="label-container">
         <label htmlFor="message" className="message-label">
-          Message:&nbsp;
+          Message:
         </label>
         {messageError && (
           <span className="ml-4 text-lg text-red-300">Please provide your message</span>
         )}
-        <textarea
-          rows={1}
-          name="message"
-          id="message"
-          placeholder="Hello, im interested in..."
-          className=" focus:border-second-100"
-        ></textarea>
-      </p>
+      </div>
+
+      <textarea
+        rows={1}
+        name="message"
+        id="message"
+        placeholder="Hello, im interested in..."
+        className=" focus:border-second-100"
+      ></textarea>
 
       <SubmitBtn />
     </form>

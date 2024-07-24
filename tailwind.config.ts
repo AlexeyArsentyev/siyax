@@ -21,6 +21,7 @@ const config: Config = {
         'first': {
           100: '#A2F1C7',
           200: '#35635E',
+          900: '#35635EAA',
         },
         'second': {
           100: '#8F59B0',

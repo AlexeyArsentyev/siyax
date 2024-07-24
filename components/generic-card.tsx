@@ -9,6 +9,9 @@ export function GenericCard() {
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
       <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white " />
+      <div className="w-full h-3/4 flex items-center justify-center">
+        <h5 className="text-3xl">Some infographics</h5>
+      </div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-2xl px-4 md:text-4xl lg:text-5xl  text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+        className="px-4 text-3xl md:text-4xl lg:text-5xl  text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
         Siya - your only indie&nbsp;
         <Highlight className="text-white">game&nbsp;store</Highlight>

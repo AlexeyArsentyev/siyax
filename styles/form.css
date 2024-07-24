@@ -1,3 +1,8 @@
+/* .form-wrapper {
+  display: flex;
+  justify-content: center;
+} */
+
 input,
 textarea {
   background-color: var(--bg-color);
@@ -46,7 +51,7 @@ label {
 .label-container {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 /* button {

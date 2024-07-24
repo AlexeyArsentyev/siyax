@@ -40,9 +40,16 @@ h3 {
   font-weight: 400;
 }
 
+h4 {
+  font-size: 2rem;
+  font-family: 'Chillax';
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
 p {
   max-width: 60rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(163, 163, 163);
   font-weight: 300;
 }

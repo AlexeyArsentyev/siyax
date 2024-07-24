@@ -7,11 +7,15 @@ import { Icon } from '../public/icons/corner';
 
 import Image from 'next/image';
 
-export function CardReveal() {
+export function CardRevealFeatures() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-main w-full gap-10 mx-auto ">
-        <Card title="You get something something" icon={<p>Some text idk</p>}>
+      <div className="flex flex-col lg:flex-row items-start justify-between bg-main w-full gap-10 mx-auto ">
+        <Card
+          title="Get what you deserve! We provide you the lowest margin as for
+              developers on the market - only 5%"
+          icon={<h4>The lowest margins</h4>}
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-first-200"
@@ -19,15 +23,7 @@ export function CardReveal() {
             dotSize={2.5}
           />
         </Card>
-        <Card
-          title="Sheetal is Nisha"
-          icon={
-            <p>
-              Some text idk it needs to be long ig lets add more wooords ok thats enoughSome text
-              idk it needs to be long ig lets add more wooords ok thats enough
-            </p>
-          }
-        >
+        <Card title="Bring your game to the top!" icon={<h4>Free marketing</h4>}>
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-second-200"
@@ -35,7 +31,10 @@ export function CardReveal() {
             dotSize={2.5}
           />
         </Card>
-        <Card title="Sheetal is Nisha" icon={<p>Some text idk</p>}>
+        <Card
+          title="We make sure that your game is well protected"
+          icon={<h4>Extensive security for your product</h4>}
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-third-200"
@@ -62,7 +61,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-white/[0.2] group/canvas-card flex items-center justify-center  max-w-sm w-full  p-4 relative h-[30rem] relative"
+      className="border border-white/[0.2] group/canvas-card flex items-start justify-center  max-w-sm w-full  p-4 relative h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
@@ -85,7 +84,7 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h5 className="text-center text-white text-xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10  mt-4  font-bold group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h5 className="absolute top-0 text-center text-red-500 font-medium text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h5>
       </div>

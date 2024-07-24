@@ -2,7 +2,7 @@ import React from 'react';
 import { EvervaultCard } from './ui/evervault-card';
 import { Icon } from '../public/icons/corner';
 
-export function EvervaultCardDemo() {
+export function Evervault() {
   return (
     <div className="border border-white/[0.2] flex flex-col items-start max-w-sm  p-4 relative h-[30rem]">
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white " />

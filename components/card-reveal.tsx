@@ -7,10 +7,10 @@ import { Icon } from '../public/icons/corner';
 
 import Image from 'next/image';
 
-export function CanvasRevealEffectDemo() {
+export function CardReveal() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row items-center justify-between bg-white dark:bg-main w-full gap-10 mx-auto ">
+      <div className="flex flex-col lg:flex-row items-center justify-between bg-main w-full gap-10 mx-auto ">
         <Card title="You get something something" icon={<p>Some text idk</p>}>
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -62,12 +62,12 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm w-full  p-4 relative h-[30rem] relative"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center  max-w-sm w-full  p-4 relative h-[30rem] relative"
     >
-      <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -top-3 -right-3 dark:text-white text-black" />
-      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 dark:text-white text-black" />
+      <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
+      <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
+      <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
+      <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white " />
 
       <AnimatePresence>
         {hovered && (

@@ -1,22 +1,21 @@
 import Image from 'next/image';
 import './globals.css';
-import { CanvasRevealEffectDemo } from '../components/card-reveal';
-import Navbar from '@/components/nav-bar';
-import { BackgroundBoxesDemo } from '@/components/background-boxes';
-import { HeroHighlightDemo } from '@/components/dots';
-import { SignupFormDemo } from '@/components/contact';
 
-import { StickyScrollRevealDemo } from '@/components/scroll';
-import { EvervaultCardDemo } from '@/components/evervault';
-import { InputField } from '@/components/input-field';
+import Navbar from '@/components/nav-bar';
+
+import { Hero } from '@/components/dots';
+
+import { Evervault } from '@/components/evervault';
+
 import { GenericCard } from '@/components/generic-card';
 import { Form } from '@/components/form';
+import { CardReveal } from '@/components/card-reveal';
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <HeroHighlightDemo />
+      <Hero />
       <div className="main-wrapper">
         <main>
           <h2 id="aboutUs">Who we are?</h2>
@@ -30,7 +29,7 @@ export default function Home() {
           </p>
           <hr />
           <h2 className="mb-0">Who we are looking for?</h2>
-          {/* <StickyScrollRevealDemo /> */}
+          {/* <StickyScrollReveal /> */}
           <div className="evervault-cards">
             <div className="evervault-text">
               <h3>Somebody somebody</h3>
@@ -57,21 +56,19 @@ export default function Home() {
                 laborum! Et aspernatur sequi vitae incidunt accusamus unde.
               </p>
             </div>
-            <EvervaultCardDemo />
+            <Evervault />
           </div>
 
           <h2 id="advantages" className="mt-20">
             What are <b>your</b> benefits?
           </h2>
 
-          <CanvasRevealEffectDemo />
-          <h2 id="contact">Contact us</h2>
+          <CardReveal />
+          <h2 id="contact" className="mb-2 mt-14">
+            Contact us
+          </h2>
           <Form />
-          {/* <SignupFormDemo /> */}
-
-          {/* <div className="form">
-            <InputField />
-          </div> */}
+          {/* <SignupForm /> */}
         </main>
       </div>
     </>

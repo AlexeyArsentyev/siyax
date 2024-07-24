@@ -3,7 +3,7 @@ import React from 'react';
 import { Boxes } from './ui/background-boxes';
 import { cn } from '@/lib/utils';
 
-export function BackgroundBoxesDemo() {
+export function BackgroundBoxes() {
   return (
     <div className="h-screen relative w-full overflow-hidden bg-main flex flex-col items-center justify-center rounded-lg">
       <div className="absolute inset-0 w-full h-full bg-main z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />

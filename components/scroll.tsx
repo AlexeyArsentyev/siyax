@@ -41,6 +41,6 @@ const content = [
     ),
   },
 ];
-export function StickyScrollRevealDemo() {
+export function StickyScrollReveal() {
   return <StickyScroll content={content} />;
 }

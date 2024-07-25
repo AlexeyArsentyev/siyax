@@ -30,7 +30,7 @@ export function Form() {
           Contact us
         </h2>
         <div className="label-container">
-          <label htmlFor="name">Name:</label>{' '}
+          <label htmlFor="name">Name:</label>
           {nameError && <span className="ml-4 text-lg text-second-100">Name required</span>}
         </div>
         <input

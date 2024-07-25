@@ -52,56 +52,51 @@ export default function Home() {
 
           <div className="special-cards">
             <div className="special-text">
-              <h3>Extensive moderation</h3>
+              <h3>Extensive game moderation</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
-                accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
-                aperiam! Deleniti quo sunt eum asperiores? Enim veniam porro mollitia inventore at
-                maxime repellendus non facilis distinctio debitis suscipit nobis impedit, quisquam
-                asperiores molestias velit, magni, quasi consectetur provident obcaecati ex nisi
-                laborum! Et aspernatur sequi vitae incidunt accusamus unde.
+                Our store has an extensive quality ensurance. However, games, created with genuine
+                effort easily meet our standards. Our curation process filters out only low-
+                submissions. This approach ensures a diverse, exceptional catalog while giving the
+                developers a fair platform to showcase their work.
               </p>
             </div>
             <Image src={moderation} width={150} alt="icon"></Image>
           </div>
+
           <div className="special-cards reverse">
-            <div className="special-text">
-              <h3>Gamejams</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
-                accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
-                aperiam! Deleniti quo sunt eum asperiores? Enim veniam porro mollitia inventore at
-                maxime repellendus non facilis distinctio debitis suscipit nobis impedit, quisquam
-                asperiores molestias velit, magni, quasi consectetur provident obcaecati ex nisi
-                laborum! Et aspernatur sequi vitae incidunt accusamus unde.
-              </p>
-            </div>
-            <Image src={gamejam} width={150} alt="icon"></Image>
-          </div>
-          <div className="special-cards">
             <div className="special-text">
               <h3>Siya as a publisher</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
-                accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
-                aperiam! Deleniti quo sunt eum asperiores? Enim veniam porro mollitia inventore at
-                maxime repellendus non facilis distinctio debitis suscipit nobis impedit, quisquam
-                asperiores molestias velit, magni, quasi consectetur provident obcaecati ex nisi
-                laborum! Et aspernatur sequi vitae incidunt accusamus unde.
+                We can also act as a publisher for new game studios, providing marketing, promotion
+                and financial support for your game. This option is ideal for new, ambitious game
+                studios.
               </p>
             </div>
             <Image src={publishing} width={150} alt="icon"></Image>
+          </div>
+
+          <div className="special-cards ">
+            <div className="special-text">
+              <h3>Gamejams</h3>
+              <p>
+                We are hosting gamejams every 3 months! Prize winners will receive a cash reward.
+                Moreover they want to continue developing their game, we offer unique publishing
+                contracts.
+              </p>
+            </div>
+            <Image src={gamejam} width={150} alt="icon"></Image>
           </div>
 
           {/* LOOKING FOR */}
 
           <div className="people-cards">
             <div>
-              <h2 className="mb-0">Who we are looking for?</h2>
+              <h2 className="my-0">Who we are looking for?</h2>
               <ul>
-                <li>-Motivated beginners (gamejam + tutuorials = progress)</li>
-                <li>-Those with big ideas who dont know how to start</li>
-                <li>-Experienced developers and studious</li>
+                <li>- Motivated beginners</li>
+                <li>- People with big ideas who dont know where to start</li>
+                <li>- Experienced developers and studious</li>
+                <li>- Those who have a complete game and require help with publishing </li>
               </ul>
             </div>
 

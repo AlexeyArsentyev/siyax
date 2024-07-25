@@ -22,7 +22,7 @@ export function CardRevealBenefits() {
           icon={
             <div className="flex flex-col items-center">
               <h4>The lowest margins</h4>
-              <Image className="pt-8 pr-2" src={margins} width={235} alt="icon"></Image>
+              <Image className="mt-10 pr-2" src={margins} width={235} alt="icon"></Image>
             </div>
           }
         >
@@ -50,11 +50,11 @@ export function CardRevealBenefits() {
           />
         </Card>
         <Card
-          title="Get in touch with other gamers and developers easily"
+          title="Get in touch with other gamers and developers has never been that convenient"
           icon={
             <div className="flex flex-col items-center">
               <h4>Community integration</h4>
-              <Image className="pl-5 pb-10" src={community} width={220} alt="icon"></Image>
+              <Image className="pl-5 -mt-2" src={community} width={220} alt="icon"></Image>
             </div>
           }
         >
@@ -107,7 +107,7 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h5 className="w-full absolute top-36 text-center text-white font-medium text-xl opacity-0 group-hover/canvas-card:opacity-100 z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h5 className="w-full absolute top-10 text-center text-white font-medium text-xl opacity-0 group-hover/canvas-card:opacity-100 z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h5>
       </div>

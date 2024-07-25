@@ -37,7 +37,7 @@ export const EvervaultCard = ({ text, className }: { text?: string; className?: 
       >
         <CardPattern mouseX={mouseX} mouseY={mouseY} randomString={randomString} />
         <div className="relative z-10 flex items-center justify-center">
-          <div className="relative h-28 w-72  rounded-full flex items-center justify-center text-white font-bold text-4xl">
+          <div className="relative h-36 w-36  rounded-full flex items-center justify-center text-white font-bold text-4xl">
             <div className="absolute w-full h-full bg-main/[0.8]  blur-sm rounded-full" />
             <span className="evervault text-white z-20 text-5xl font-light">{text}</span>
           </div>

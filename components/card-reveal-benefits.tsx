@@ -7,7 +7,7 @@ import { Icon } from '../public/icons/corner';
 
 import recommendation from '../public/icons/target.png';
 import community from '../public/icons/decision.png';
-import margins from '../public/icons/margin.svg';
+import margins from '../public/icons/margin.png';
 
 import Image from 'next/image';
 
@@ -16,13 +16,16 @@ export function CardRevealBenefits() {
     <>
       <div className="flex flex-col lg:flex-row items-start justify-between bg-main w-full gap-10 mx-auto ">
         <Card
-          title="Get what you deserve!
-           We provide the lowest margin as for
-              developers on the market - only 5%"
+          title={
+            <>
+              <h5>Get what you deserve!</h5>
+              <h5>We provide the lowest margin on the market - only 5%</h5>
+            </>
+          }
           icon={
             <div className="flex flex-col items-center">
               <h4>The lowest margins</h4>
-              <Image className="mt-10 pr-2" src={margins} width={235} alt="icon"></Image>
+              <Image className="mr-2 mt-1 " src={margins} width={200} alt="icon"></Image>
             </div>
           }
         >
@@ -34,7 +37,9 @@ export function CardRevealBenefits() {
           />
         </Card>
         <Card
-          title="Our advanced recommendation system will help you to stand out from the others."
+          title={
+            <h5>Our advanced recommendation system will help you to stand out from the others.</h5>
+          }
           icon={
             <div className="flex flex-col items-center">
               <h4>Reccommendation system</h4>
@@ -50,7 +55,11 @@ export function CardRevealBenefits() {
           />
         </Card>
         <Card
-          title="Get in touch with other gamers and developers has never been that convenient"
+          title={
+            <h5>
+              Getting in touch with other gamers and developers has never been that convenient
+            </h5>
+          }
           icon={
             <div className="flex flex-col items-center">
               <h4>Community integration</h4>
@@ -75,7 +84,7 @@ const Card = ({
   icon,
   children,
 }: {
-  title: string;
+  title: React.ReactNode;
   icon: React.ReactNode;
   children?: React.ReactNode;
 }) => {
@@ -84,7 +93,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-white/[0.2] group/canvas-card flex items-start justify-center  max-w-sm w-full  p-4 relative h-[30rem] relative"
+      className="border border-white/[0.2] group/canvas-card flex items-start justify-center  max-w-sm w-full  p-5 relative h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 text-white" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-white " />
@@ -107,9 +116,9 @@ const Card = ({
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h5 className="w-full absolute top-10 text-center text-white font-medium text-xl opacity-0 group-hover/canvas-card:opacity-100 z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <div className="w-full absolute top-10 text-center text-white font-medium text-xl opacity-0 group-hover/canvas-card:opacity-100 z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
-        </h5>
+        </div>
       </div>
     </div>
   );

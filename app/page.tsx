@@ -46,7 +46,7 @@ export default function Home() {
 
           {/* SPECIAL */}
 
-          <h2 id="advantages" className="mt-20 mb-5">
+          <h2 id="advantages" className="special-header ">
             What makes us special?
           </h2>
 

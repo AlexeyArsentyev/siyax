@@ -27,7 +27,7 @@ export function Form() {
         </h2>
         <div className="label-container">
           <label htmlFor="name">Name:</label>{' '}
-          {nameError && <span className="ml-4 text-lg text-third-100">Name required</span>}
+          {nameError && <span className="ml-4 text-lg text-second-100">Name required</span>}
         </div>
         <input
           type="text"
@@ -39,7 +39,7 @@ export function Form() {
 
         <div className="label-container">
           <label htmlFor="email">Email:</label>
-          {emailError && <span className="ml-4 text-lg text-third-100">Email required</span>}
+          {emailError && <span className="ml-4 text-lg text-second-100">Email required</span>}
         </div>
 
         <input
@@ -54,7 +54,7 @@ export function Form() {
           <label htmlFor="message" className="message-label">
             Message:
           </label>
-          {messageError && <span className="ml-4 text-lg text-third-100">Message required</span>}
+          {messageError && <span className="ml-4 text-lg text-second-100">Message required</span>}
         </div>
 
         <textarea

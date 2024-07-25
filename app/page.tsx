@@ -28,13 +28,12 @@ export default function Home() {
             Who we are
           </h2>
           <p>
-            Siya is a developer-focused indie game store dedicated to nurturing creative talent and
-            connecting players with unique experiences. We stand out by offering exceptionally low
-            margins, allowing developers to keep more of their hard-earned revenue. Our fair
-            moderation approach maintains quality while encouraging innovation. With our intelligent
-            recommendation system, we ensure indie gems don&apos;t go unnoticed, giving creators the
-            visibility they deserve. At Siya, we&apos;re committed to cultivating a vibrant indie
-            game ecosystem where developers thrive and players discover exciting new worlds.
+            Siya is more than just a game store — it&apos;s a launchpad for indie creativity.
+            We&apos;ve reimagined the digital marketplace to put developers first. Our unbeatable
+            revenue share lets creators keep more of their earnings with industry-leading low
+            margins. Our smart discovery engine ensures hidden gems get the spotlight they deserve,
+            while our fair moderation maintains quality standards while embracing innovation and
+            fresh ideas.
           </p>
           <hr />
 
@@ -54,7 +53,7 @@ export default function Home() {
             <div className="special-text">
               <h3>We have standards</h3>
               <p>
-                Our store has an extensive quality ensurance. However, games, created with genuine
+                Our store has extensive quality insurance. However, games, created with genuine
                 effort easily be accepted. Our curation process filters out only low-level
                 submissions. This approach ensures a diverse, exceptional catalog while giving the
                 developers a fair platform to showcase their work.
@@ -79,10 +78,10 @@ export default function Home() {
             <div className="special-text">
               <h3>Gamejams</h3>
               <p>
-                We are hosting gamejams every 3 months! This is an excellent opportunity for
-                everyone to gain experience and receive feedback. Prize winners will receive a cash
-                reward. Moreover they want to continue developing their game, we offer unique
-                publishing contracts.
+                We host game jams every 3 months! This is an excellent opportunity for everyone to
+                gain experience and receive feedback. Prize winners will receive a cash reward.
+                Moreover, if they want to continue developing their game, we offer unique publishing
+                contracts.
               </p>
             </div>
             <Image className="special-img" src={gamejam} width={200} alt="icon"></Image>

@@ -12,7 +12,10 @@ import { Evervault } from '@/components/evervault';
 import { GenericCard } from '@/components/generic-card';
 import { Form } from '@/components/form';
 import { CardRevealBenefits } from '@/components/card-reveal-benefits';
-import { CardRevealFeatures } from '@/components/card-reveal-feaures';
+
+import moderation from '../public/icons/moderation.png';
+import publishing from '../public/icons/publishing.png';
+import gamejam from '../public/icons/gamejam.png';
 
 export default function Home() {
   return (
@@ -29,9 +32,9 @@ export default function Home() {
             connecting players with unique experiences. We stand out by offering exceptionally low
             margins, allowing developers to keep more of their hard-earned revenue. Our fair
             moderation approach maintains quality while encouraging innovation. With our intelligent
-            recommendation system, we ensure indie gems don't go unnoticed, giving creators the
-            visibility they deserve. At Siya, we're committed to cultivating a vibrant indie game
-            ecosystem where developers thrive and players discover exciting new worlds.
+            recommendation system, we ensure indie gems don&apos;t go unnoticed, giving creators the
+            visibility they deserve. At Siya, we&apos;re committed to cultivating a vibrant indie
+            game ecosystem where developers thrive and players discover exciting new worlds.
           </p>
           <hr />
 
@@ -41,17 +44,15 @@ export default function Home() {
 
           <CardRevealBenefits />
 
+          {/* SPECIAL */}
+
           <h2 id="advantages" className="mt-20">
             What makes us special?
           </h2>
-          {/* 
-          <CardRevealFeatures /> */}
 
-          {/* <h2 className="mb-0">Who we are looking for?</h2> */}
-
-          <div className="evervault-cards reverse">
-            <div className="evervault-text">
-              <h3>Passionate developers</h3>
+          <div className="special-cards">
+            <div className="special-text">
+              <h3>Extensive moderation</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
                 accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
@@ -61,11 +62,11 @@ export default function Home() {
                 laborum! Et aspernatur sequi vitae incidunt accusamus unde.
               </p>
             </div>
-            <div className="h-80 w-72 bg-slate-600"></div>
+            <Image src={moderation} width={150} alt="icon"></Image>
           </div>
-          <div className="evervault-cards">
-            <div className="evervault-text">
-              <h3>Aspiring game designers</h3>
+          <div className="special-cards reverse">
+            <div className="special-text">
+              <h3>Gamejams</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
                 accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
@@ -75,11 +76,11 @@ export default function Home() {
                 laborum! Et aspernatur sequi vitae incidunt accusamus unde.
               </p>
             </div>
-            <div className="h-80 w-72 bg-slate-600"></div>
+            <Image src={gamejam} width={150} alt="icon"></Image>
           </div>
-          <div className="evervault-cards reverse">
-            <div className="evervault-text">
-              <h3>Passionate developers</h3>
+          <div className="special-cards">
+            <div className="special-text">
+              <h3>Siya as a publisher</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum laudantium, error
                 accusantium nesciunt adipisci facere voluptates magnam iste? Placeat, aliquid
@@ -89,11 +90,24 @@ export default function Home() {
                 laborum! Et aspernatur sequi vitae incidunt accusamus unde.
               </p>
             </div>
-            <div className="h-80 w-72 bg-slate-600"></div>
+            <Image src={publishing} width={150} alt="icon"></Image>
           </div>
 
+          {/* LOOKING FOR */}
+
+          <div className="people-cards">
+            <div>
+              <h2 className="mb-0">Who we are looking for?</h2>
+              <ul>
+                <li>-Motivated beginners (gamejam + tutuorials = progress)</li>
+                <li>-Those with big ideas who dont know how to start</li>
+                <li>-Experienced developers and studious</li>
+              </ul>
+            </div>
+
+            <Evervault />
+          </div>
           <Form />
-          {/* <SignupForm /> */}
         </main>
       </div>
     </>

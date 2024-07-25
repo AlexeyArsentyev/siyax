@@ -41,10 +41,11 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
-  font-family: 'Chillax';
+  font-size: 1.5rem;
+
   margin-top: 2rem;
   margin-bottom: 4rem;
+  font-family: 'chillax';
 }
 
 p {
@@ -58,10 +59,17 @@ p {
   margin: 0 5%;
 }
 
-.evervault-cards {
+.special-cards {
   display: flex;
   gap: 2rem;
   align-items: center;
+  margin: 3.5rem 0;
+}
+.people-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3.5rem 0;
 }
 
 .reverse {
@@ -74,6 +82,14 @@ hr {
   margin: 3rem 0;
 }
 
+li {
+  font-size: 1.5rem;
+}
+
+.evervault {
+  font-family: 'chillax';
+}
+
 @media (max-width: 800px) {
   h2 {
     font-size: 2.5rem;
@@ -83,14 +99,14 @@ hr {
   }
 }
 @media (max-width: 1300px) {
-  .evervault-cards {
+  .special-cards {
     flex-direction: column;
     align-items: start;
   }
   h3 {
     margin-top: 2.5rem;
   }
-  .evervault-text p {
+  .special-text p {
     margin-bottom: 0.5rem;
   }
 }

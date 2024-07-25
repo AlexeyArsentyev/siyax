@@ -10,11 +10,11 @@ export function Evervault() {
       <Icon className="absolute h-6 w-6 -top-3 -right-3 text-white " />
       <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-white " />
 
-      <EvervaultCard text="This guy" />
+      <EvervaultCard text="See you" />
 
-      <h5 className="text-whitemt-4 text-sm font-light">
+      {/* <h5 className="text-whitemt-4 text-sm font-light">
         Hover over this card to reveal an awesome effect. Running out of copy here.
-      </h5>
+      </h5> */}
     </div>
   );
 }

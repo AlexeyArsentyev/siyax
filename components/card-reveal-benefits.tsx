@@ -5,7 +5,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
 import { Icon } from '../public/icons/corner';
 
-import rec from '../public/icons/target.png';
+import recommendation from '../public/icons/target.png';
+import community from '../public/icons/decision.png';
+import margins from '../public/icons/margin.svg';
 
 import Image from 'next/image';
 
@@ -14,12 +16,13 @@ export function CardRevealBenefits() {
     <>
       <div className="flex flex-col lg:flex-row items-start justify-between bg-main w-full gap-10 mx-auto ">
         <Card
-          title="Get what you deserve! We provide you the lowest margin as for
+          title="Get what you deserve!
+           We provide the lowest margin as for
               developers on the market - only 5%"
           icon={
             <div className="flex flex-col items-center">
               <h4>The lowest margins</h4>
-              <Image className="pr-5" src={rec} width={220}></Image>
+              <Image className="pt-8 pr-2" src={margins} width={235} alt="icon"></Image>
             </div>
           }
         >
@@ -30,7 +33,15 @@ export function CardRevealBenefits() {
             dotSize={2.5}
           />
         </Card>
-        <Card title="Bring your game to the top!" icon={<h4>Free marketing</h4>}>
+        <Card
+          title="Our advanced recommendation system will help you to stand out from the others."
+          icon={
+            <div className="flex flex-col items-center">
+              <h4>Reccommendation system</h4>
+              <Image className="pr-5" src={recommendation} width={220} alt="icon"></Image>
+            </div>
+          }
+        >
           <CanvasRevealEffect
             animationSpeed={5.1}
             containerClassName="bg-second-200"
@@ -39,8 +50,13 @@ export function CardRevealBenefits() {
           />
         </Card>
         <Card
-          title="We make sure that your game is well protected"
-          icon={<h4>Extensive security for your product</h4>}
+          title="Get in touch with other gamers and developers easily"
+          icon={
+            <div className="flex flex-col items-center">
+              <h4>Community integration</h4>
+              <Image className="pl-5 pb-10" src={community} width={220} alt="icon"></Image>
+            </div>
+          }
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -87,11 +103,11 @@ const Card = ({
         )}
       </AnimatePresence>
 
-      <div className="relative z-20 ">
+      <div className="relative z-20 w-full">
         <div className="text-center group-hover/canvas-card:-translate-y-4 group-hover/canvas-card:opacity-0 transition duration-200 w-full  mx-auto flex items-center justify-center">
           {icon}
         </div>
-        <h5 className="absolute top-0 text-center text-white font-medium text-2xl opacity-0 group-hover/canvas-card:opacity-100 relative z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
+        <h5 className="w-full absolute top-36 text-center text-white font-medium text-xl opacity-0 group-hover/canvas-card:opacity-100 z-10  group-hover/canvas-card:text-white group-hover/canvas-card:-translate-y-2 transition duration-200">
           {title}
         </h5>
       </div>

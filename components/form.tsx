@@ -5,6 +5,7 @@ export function Form() {
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [thankyou, setThankyou] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -17,12 +18,15 @@ export function Form() {
     setEmailError(!email);
     setNameError(!name);
     setMessageError(!message);
+    if (email && name && message) {
+      setThankyou(true);
+    }
   };
 
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper mt-14">
       <form onSubmit={handleSubmit}>
-        <h2 id="contact" className="mb-2 mt-14">
+        <h2 id="contact" className="mb-2 ">
           Contact us
         </h2>
         <div className="label-container">
@@ -66,7 +70,9 @@ export function Form() {
         ></textarea>
 
         <SubmitBtn />
+        {thankyou && <p className="text-3xl">Thank you for your message!</p>}
       </form>
+      <h6 className="contact-phrase">Great things start small...</h6>
     </div>
   );
 }

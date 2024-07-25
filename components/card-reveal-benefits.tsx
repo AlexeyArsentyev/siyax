@@ -57,7 +57,7 @@ export function CardRevealBenefits() {
         <Card
           title={
             <h5>
-              Getting in touch with other gamers and developers has never been that convenient
+              Getting in touch with other gamers and developers has never been that convenient!
             </h5>
           }
           icon={

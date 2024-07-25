@@ -90,19 +90,22 @@ export default function Home() {
 
           {/* LOOKING FOR */}
 
+          <hr />
+
           <div className="people-cards">
             <div>
               <h2 className="my-0">Who we are looking for?</h2>
               <ul>
                 <li>Motivated beginners</li>
-                <li>People with big ideas who dont know where to start</li>
+                <li>People with great ideas who dont know where to start</li>
                 <li>Experienced developers and studious</li>
-                <li>Those who have a complete game and require help with publishing </li>
+                <li>Those who require help with publishing </li>
               </ul>
             </div>
 
             <Evervault />
           </div>
+
           <Form />
         </main>
       </div>

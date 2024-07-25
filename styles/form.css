@@ -1,7 +1,10 @@
-/* .form-wrapper {
+.form-wrapper {
   display: flex;
-  justify-content: center;
-} */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+  gap: 5rem;
+}
 
 input,
 textarea {
@@ -35,13 +38,20 @@ textarea::placeholder {
 }
 
 form {
-  margin-bottom: 10rem;
-  max-width: 30rem;
+  max-width: 35rem;
   font-weight: 300;
+  width: 100%;
 }
 label {
   color: white;
   font-size: 1.5rem;
+}
+
+.contact-phrase {
+  font-size: 3.5rem;
+  color: #474747;
+  font-family: 'chillax';
+  font-weight: 500;
 }
 
 .message-label {
@@ -68,6 +78,12 @@ label {
 
 .submit-btn:hover .submit-icon {
   color: #c2fede;
+}
+
+@media (max-width: 1300px) {
+  .contact-phrase {
+    display: none;
+  }
 }
 
 /* button {

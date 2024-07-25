@@ -69,6 +69,7 @@ p {
 .special-text {
   max-width: 50rem;
 }
+
 .people-cards {
   display: flex;
   justify-content: space-between;
@@ -84,6 +85,10 @@ hr {
   border-top-width: 1px;
   border-color: rgb(73, 73, 73);
   margin: 3rem 0;
+}
+
+ul {
+  list-style-type: '- ';
 }
 
 li {
@@ -105,12 +110,25 @@ li {
   }
 }
 @media (max-width: 1300px) {
+  .people-cards,
   .special-cards {
     flex-direction: column;
-    align-items: start;
+  }
+  .special-img {
+    display: none;
+  }
+  .special-cards {
+    margin: 0;
+  }
+  h2 {
+    font-size: 2rem;
   }
   h3 {
     margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+  li {
+    font-size: 1.2rem;
   }
   .special-text p {
     margin-bottom: 0.5rem;

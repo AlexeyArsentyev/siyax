@@ -25,7 +25,7 @@ export default function Home() {
       <div className="main-wrapper">
         <main>
           <h2 id="aboutUs" className="mb-2">
-            Who we are?
+            Who we are
           </h2>
           <p>
             Siya is a developer-focused indie game store dedicated to nurturing creative talent and
@@ -46,45 +46,46 @@ export default function Home() {
 
           {/* SPECIAL */}
 
-          <h2 id="advantages" className="mt-20">
+          <h2 id="advantages" className="mt-20 mb-5">
             What makes us special?
           </h2>
 
           <div className="special-cards">
             <div className="special-text">
-              <h3>Extensive game moderation</h3>
+              <h3>We have standards</h3>
               <p>
                 Our store has an extensive quality ensurance. However, games, created with genuine
-                effort easily meet our standards. Our curation process filters out only low-
+                effort easily be accepted. Our curation process filters out only low-level
                 submissions. This approach ensures a diverse, exceptional catalog while giving the
                 developers a fair platform to showcase their work.
               </p>
             </div>
-            <Image src={moderation} width={150} alt="icon"></Image>
+            <Image className="special-img" src={moderation} width={200} alt="icon"></Image>
           </div>
 
           <div className="special-cards reverse">
             <div className="special-text">
-              <h3>Siya as a publisher</h3>
+              <h3>Siya can be your publisher</h3>
               <p>
-                We can also act as a publisher for new game studios, providing marketing, promotion
-                and financial support for your game. This option is ideal for new, ambitious game
-                studios.
+                We can publish your games, providing marketing, promotion and financial support.
+                This option is ideal for new, ambitious game studios. Thus you can concentrate on
+                making your dream game, while we handle all the management related problems.
               </p>
             </div>
-            <Image src={publishing} width={150} alt="icon"></Image>
+            <Image className="special-img" src={publishing} width={200} alt="icon"></Image>
           </div>
 
           <div className="special-cards ">
             <div className="special-text">
               <h3>Gamejams</h3>
               <p>
-                We are hosting gamejams every 3 months! Prize winners will receive a cash reward.
-                Moreover they want to continue developing their game, we offer unique publishing
-                contracts.
+                We are hosting gamejams every 3 months! This is an excellent opportunity for
+                everyone to gain experience and receive feedback. Prize winners will receive a cash
+                reward. Moreover they want to continue developing their game, we offer unique
+                publishing contracts.
               </p>
             </div>
-            <Image src={gamejam} width={150} alt="icon"></Image>
+            <Image className="special-img" src={gamejam} width={200} alt="icon"></Image>
           </div>
 
           {/* LOOKING FOR */}
@@ -93,10 +94,10 @@ export default function Home() {
             <div>
               <h2 className="my-0">Who we are looking for?</h2>
               <ul>
-                <li>- Motivated beginners</li>
-                <li>- People with big ideas who dont know where to start</li>
-                <li>- Experienced developers and studious</li>
-                <li>- Those who have a complete game and require help with publishing </li>
+                <li>Motivated beginners</li>
+                <li>People with big ideas who dont know where to start</li>
+                <li>Experienced developers and studious</li>
+                <li>Those who have a complete game and require help with publishing </li>
               </ul>
             </div>
 

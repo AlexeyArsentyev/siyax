@@ -15,15 +15,14 @@ textarea {
   width: 100%;
   transition: border 0.3s ease-in-out;
   display: block;
+  border-bottom: 1px #393939 solid;
 }
 
 input {
-  border-bottom: 1px #4b4b4b solid;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 textarea {
-  border-bottom: 1px #4b4b4b solid;
   min-height: 2rem;
 }
 
@@ -34,7 +33,7 @@ input:focus {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgb(186, 186, 186);
+  color: rgb(150, 150, 150);
 }
 
 form {
@@ -45,10 +44,11 @@ form {
 label {
   color: white;
   font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .contact-phrase {
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: #474747;
   font-family: 'chillax';
   font-weight: 500;
@@ -61,7 +61,7 @@ label {
 .label-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .submit-icon {

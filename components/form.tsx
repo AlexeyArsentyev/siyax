@@ -1,25 +1,38 @@
 import React, { useState } from 'react';
 import '../styles/form.css';
 import { SubmitBtn } from './submit-btn';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../firebase';
+
 export function Form() {
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
   const [messageError, setMessageError] = useState(false);
   const [thankyou, setThankyou] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
-    const email = formData.get('email');
-    const name = formData.get('name');
-    const message = formData.get('message');
+    try {
+      console.log('start');
 
-    setEmailError(!email);
-    setNameError(!name);
-    setMessageError(!message);
-    if (email && name && message) {
-      setThankyou(true);
+      const formData = new FormData(event.target);
+      const email = formData.get('email');
+      const name = formData.get('name');
+      const message = formData.get('message');
+
+      // setEmailError(!email);
+      // setNameError(!name);
+      // setMessageError(!message);
+      // if (email && name && message) {
+      //   setThankyou(true);
+      // }
+      const docRef = await addDoc(collection(db, 'feedback'), {
+        name,
+      });
+      console.log('Document written with ID: ', docRef.id);
+    } catch (e) {
+      console.error('Error adding document: ', e);
     }
   };
 

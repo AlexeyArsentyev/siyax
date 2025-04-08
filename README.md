@@ -1,7 +1,7 @@
-Next.js + Firebase project  
-Deployed website: https://siyax.onrender.com 
+Next.js + AceternityUI project  
+Website: https://siyax.onrender.com
 
 To start locally, run these commands:
 
-npm install 
-npm run dev 
+npm install
+npm run dev

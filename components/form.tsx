@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import '../styles/form.css';
 import { SubmitBtn } from './submit-btn';
 
-import { setFeedback } from './../utils/setFeedback';
-
 export function Form() {
   const [emailError, setEmailError] = useState(false);
   const [nameError, setNameError] = useState(false);
@@ -27,7 +25,7 @@ export function Form() {
         setThankyou(true);
       }
 
-      setFeedback(email, name, message);
+      // Send data to the database
     } catch (e) {
       console.error('Error adding document: ', e);
     }

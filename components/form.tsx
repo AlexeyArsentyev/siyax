@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, FormEvent } from 'react';
 import '../styles/form.css';
 import { SubmitBtn } from './submit-btn';
 
@@ -8,11 +8,11 @@ export function Form() {
   const [messageError, setMessageError] = useState(false);
   const [thankyou, setThankyou] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     try {
-      const formData = new FormData(event.target);
+      const formData = new FormData(event.currentTarget);
 
       const email = formData.get('email');
       const name = formData.get('name');

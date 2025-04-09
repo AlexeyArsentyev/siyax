@@ -1,8 +1,14 @@
 'use client';
 import { useMotionValue } from 'framer-motion';
-import React, { useState, useEffect } from 'react';
-import { useMotionTemplate, motion } from 'framer-motion';
+import React, { useState, useEffect, MouseEvent } from 'react';
+import { useMotionTemplate, motion, MotionValue } from 'framer-motion';
 import { cn } from '@/lib/utils';
+
+type CardPatternProps = {
+  mouseX: MotionValue<number>;
+  mouseY: MotionValue<number>;
+  randomString: string;
+};
 
 export const EvervaultCard = ({ text, className }: { text?: string; className?: string }) => {
   let mouseX = useMotionValue(0);
@@ -15,7 +21,13 @@ export const EvervaultCard = ({ text, className }: { text?: string; className?: 
     setRandomString(str);
   }, []);
 
-  function onMouseMove({ currentTarget, clientX, clientY }: any) {
+  interface MouseMoveEvent {
+    currentTarget: HTMLElement;
+    clientX: number;
+    clientY: number;
+  }
+
+  function onMouseMove({ currentTarget, clientX, clientY }: MouseMoveEvent) {
     let { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
@@ -47,7 +59,7 @@ export const EvervaultCard = ({ text, className }: { text?: string; className?: 
   );
 };
 
-export function CardPattern({ mouseX, mouseY, randomString }: any) {
+export function CardPattern({ mouseX, mouseY, randomString }: CardPatternProps) {
   let maskImage = useMotionTemplate`radial-gradient(250px at ${mouseX}px ${mouseY}px, white, transparent)`;
   let style = { maskImage, WebkitMaskImage: maskImage };
 

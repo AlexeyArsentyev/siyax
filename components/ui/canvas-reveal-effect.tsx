@@ -152,6 +152,15 @@ type Uniforms = {
     type: string;
   };
 };
+
+interface ShaderMaterialUniforms {
+  [key: string]: THREE.IUniform<any>;
+}
+
+interface ExtendedShaderMaterial extends THREE.ShaderMaterial {
+  uniforms: ShaderMaterialUniforms;
+}
+
 const ShaderMaterial = ({
   source,
   uniforms,
@@ -163,7 +172,7 @@ const ShaderMaterial = ({
   uniforms: Uniforms;
 }) => {
   const { size } = useThree();
-  const ref = useRef<THREE.Mesh>();
+  const ref = useRef<THREE.Mesh>(null);
   let lastFrameTime = 0;
 
   useFrame(({ clock }) => {
@@ -174,13 +183,13 @@ const ShaderMaterial = ({
     }
     lastFrameTime = timestamp;
 
-    const material: any = ref.current.material;
+    const material = ref.current.material as ExtendedShaderMaterial;
     const timeLocation = material.uniforms.u_time;
     timeLocation.value = timestamp;
   });
 
   const getUniforms = () => {
-    const preparedUniforms: any = {};
+    const preparedUniforms: ShaderMaterialUniforms = {};
 
     for (const uniformName in uniforms) {
       const uniform: any = uniforms[uniformName];

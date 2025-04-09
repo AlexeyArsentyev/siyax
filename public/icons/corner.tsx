@@ -1,4 +1,6 @@
-export const Icon = ({ className, ...rest }: any) => {
+import { SVGProps } from 'react';
+
+export const Icon = ({ className, ...rest }: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -80,7 +80,9 @@ export function Form() {
         <SubmitBtn />
         {thankyou && <p className="text-3xl">Thank you for your message!</p>}
       </form>
-      <h6 className="contact-phrase">Great things start small...</h6>
+      <h6 className="contact-phrase">
+        Great things start small... <br></br> see ya
+      </h6>
     </div>
   );
 }
